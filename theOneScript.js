@@ -80,7 +80,7 @@ async function lotrFetch() {
   towers.setAttribute = ("id", "towers");
   towers.innerText = "The Two Towers";
   towers.addEventListener("click", () => {
-    if (movieIdentifier(quoteMovie) === "The Two Towers") {
+    if (movieIdentifier(quoteMovie) === "The Two Towers ") {
       if (!alert("You got it right!")) {
         window.location.reload();
       }
@@ -101,15 +101,17 @@ async function lotrFetch() {
     }
   });
 
-  trivia.innerText = ` ${quoteDialog}`;
+  trivia.innerText = ` "  ${quoteDialog}  "`;
+  trivia.setAttribute('id', 'quotation')
   attribution.innerText = `-${charIdentifier(quoteChar)}`;
+  attribution.setAttribute('id', 'attribution')
   triviaSection.appendChild(trivia);
   triviaSection.appendChild(attribution);
   buttonsSection.appendChild(fellowship);
   buttonsSection.appendChild(towers);
   buttonsSection.appendChild(rotk);
 
-  console.log(movieIdentifier(quoteMovie))
+  // console.log(movieIdentifier(quoteMovie))
 }
 
 lotrFetch();

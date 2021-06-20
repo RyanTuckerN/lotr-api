@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "anironregular";
+  src: url("aniron-font-webkit/anirm___-webfont.woff2") format("woff2"),
+    url("aniron-font-webkit/anirm___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "anironregular";
+  background:linear-gradient(to bottom, rgba(197, 159, 131, 0.2) 0%, rgba(235, 176, 134, 0.596) 100%), url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+#body-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#quotation {
+  font-size: x-large;
+  width: 50vw;
+  height: auto;
+}
+
+button {
+  font-family: "anironregular";
+  background-color: rgb(248, 224, 193);
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: burlywood;
+  cursor: pointer;
+}
+
+footer{
+  position: fixed;
+  bottom: 0%;
+  font-size: 12px;
+}
+
+.social-links{
+  height: 30px;
+  width: 30px;
+  opacity: .6;
+}
+
+.social-links:hover{
+  opacity: .9;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: xx-small;
+    display: flex;
+    align-items: center;
+  }
+
+  #quotation {
+    font-size: xx-small;
+    width: 98vw;
+  }
+
+  #body-wrapper {
+    margin-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+}
