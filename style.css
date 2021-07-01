@@ -8,7 +8,12 @@
 
 body {
   font-family: "anironregular";
-  background:linear-gradient(to bottom, rgba(197, 159, 131, 0.2) 0%, rgba(235, 176, 134, 0.596) 100%), url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background: linear-gradient(
+      to bottom,
+      rgba(197, 159, 131, 0.2) 0%,
+      rgba(235, 176, 134, 0.596) 100%
+    ),
+    url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -33,7 +38,7 @@ section {
 }
 
 #quotation {
-  font-size: x-large;
+  font-size: large;
   width: 50vw;
   height: auto;
 }
@@ -53,20 +58,20 @@ button:hover {
   cursor: pointer;
 }
 
-footer{
+footer {
   position: fixed;
   bottom: 0%;
   font-size: 12px;
 }
 
-.social-links{
+.social-links {
   height: 30px;
   width: 30px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
-.social-links:hover{
-  opacity: .9;
+.social-links:hover {
+  opacity: 0.9;
 }
 @media screen and (max-width: 1000px) {
   body {
@@ -85,5 +90,22 @@ footer{
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  body {
+    font-size: small;
+    display: flex;
+    align-items: center;
+  }
+  #buttons{
+    flex-direction: row;
   }
 }

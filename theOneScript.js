@@ -101,10 +101,10 @@ async function lotrFetch() {
     }
   });
 
-  trivia.innerText = ` "  ${quoteDialog}  "`;
-  trivia.setAttribute('id', 'quotation')
+  trivia.innerText = ` "  ${quoteDialog.replace(/\s+/g, ' ').trim()}  "`;
+  trivia.setAttribute("id", "quotation");
   attribution.innerText = `-${charIdentifier(quoteChar)}`;
-  attribution.setAttribute('id', 'attribution')
+  attribution.setAttribute("id", "attribution");
   triviaSection.appendChild(trivia);
   triviaSection.appendChild(attribution);
   buttonsSection.appendChild(fellowship);
